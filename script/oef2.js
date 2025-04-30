@@ -48,10 +48,11 @@ const todoDiv = document.querySelector(".todo")
 const afgehandeldDiv = document.querySelector(".afgehandeld")
 
 toestellen.forEach(machine => {
-  machine.onderhoud{
+  machine.onderhoud.forEach(probleem => {
     
-  }
+  });
+  
   const opdrachtenLijst = document.createElement("p")
-  opdrachtenLijst.innerHTML = machine.onderhoud.omschrijving
+  opdrachtenLijst.innerHTML = `${machine.benaming} - ${machine.onderhoud.omschrijving}`
   todoDiv.appendChild(opdrachtenLijst)
 });
