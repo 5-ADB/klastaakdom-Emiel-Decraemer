@@ -61,9 +61,9 @@ toestellen.forEach(machine => {
  */
 toestellen.forEach(machine => {
   const machineProbleem = machine.onderhoud.forEach(soortOnderhoud => {
-    if (soortOnderhoud.opgelost != ) {
-      return soortOnderhoud.omschrijving})
+    if (soortOnderhoud.opgelost == false) {
+      return soortOnderhoud.omschrijving
     }
-    
-  console.log(`${machine.id} - ${machine.benaming} - ${machineProbleem}`)
+    })
+  console.log(`${machine.id} - ${machine.benaming} - ${machineProbleem}`);
 });
