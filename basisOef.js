@@ -50,9 +50,17 @@ const toestellen = [
  * res: wasmachine, droogkast
  */
 
+toestellen.forEach(machine => {
+  console.log(machine.benaming);
+});
 
 
 /**
  * Geef het id + toestel + probleem van de problemen die nog niet zijn opgelost
  * res: 2 - droogkast - filter stuk
  */
+toestellen.forEach(machine => {
+  const machineProbleem = machine.onderhoud.forEach(soortOnderhoud => {
+    return soortOnderhoud.omschrijving})
+  console.log(`${machine.id} - ${machine.benaming} - ${machineProbleem}`);
+});
