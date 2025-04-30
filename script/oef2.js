@@ -42,3 +42,16 @@ const toestellen = [
     ],
   },
 ];
+
+// ophalen classes/divs van html
+const todoDiv = document.querySelector(".todo")
+const afgehandeldDiv = document.querySelector(".afgehandeld")
+
+toestellen.forEach(machine => {
+  machine.onderhoud{
+    
+  }
+  const opdrachtenLijst = document.createElement("p")
+  opdrachtenLijst.innerHTML = machine.onderhoud.omschrijving
+  todoDiv.appendChild(opdrachtenLijst)
+});
